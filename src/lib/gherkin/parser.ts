@@ -74,7 +74,7 @@ export function parseFeature(txt: string): Feature {
           cur.startsWith('Given ') || cur.startsWith('When ') || cur.startsWith('Then ') ||
           cur.startsWith('And ') || cur.startsWith('But ') ||
           cur.startsWith('Examples:') ||
-          cur.startsWith('Scenario ') || cur.startsWith('Scenario Outline:') || cur.startsWith('Background:')
+          cur.startsWith('Scenario: ') || cur.startsWith('Scenario Outline:') || cur.startsWith('Background:')
         ) break;
         scenDescLines.push(lines[i]); // keep spacing
         i++;
