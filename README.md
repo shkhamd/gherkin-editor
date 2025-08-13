@@ -27,8 +27,8 @@
 ├── package-lock.json  
 ├── package.json  
 ├── vite.config.ts    
-├── tsconfig.json
-├── README.md
+├── tsconfig.json  
+├── README.md  
 ├── PLAN.md  
 ├── SPEC.md  
 └── LICENSE 
