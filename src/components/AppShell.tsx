@@ -2,7 +2,7 @@ import { useEditorStore } from '../store/editorStore'
 import { openWithFS, saveWithFS } from '../lib/fs'
 
 export function AppShell() {
-  const { newFile, saveText, openText, validate, toggleLayout, lastError } = useEditorStore()
+  const { newFile, saveText, openText, validate, toggleLayout, layout  } = useEditorStore()
   const onOpen = async () => {
     const txt = await openWithFS()
     if (txt != null) openText(txt)
@@ -20,14 +20,15 @@ export function AppShell() {
 
   return (
     <header className="sticky top-0 z-10 bg-white/80 backdrop-blur border-b">
-      <div className="max-w-screen-2xl mx-auto p-2 flex items-center gap-2">
+      <div className="w-full p-2 flex items-center gap-2 justify-start">
         <h1 className="text-xl font-bold mr-4">Gherkin Editor</h1>
         <button className="btn" onClick={newFile}>New</button>
         <button className="btn" onClick={onOpen}>Open</button>
         <button className="btn" onClick={onSave}>Save</button>
         <button className="btn" onClick={onValidate}>Validate</button>
-        <div className="flex-1"></div>
-        <button className="btn" onClick={toggleLayout}>Layout: side/stack</button>
+        <button className="btn" onClick={toggleLayout}>
+            Layout: <span className='capitalize italic'>{layout}</span>
+        </button>
       </div>
     </header>
   )

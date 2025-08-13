@@ -71,7 +71,7 @@ export function ResizableSplit({
       style={gridStyle}
     >
       {/* Pane A */}
-      <div className="min-w-0 min-h-0 overflow-auto">{a}</div>
+      <div className="min-w-0 min-h-0 overflow-hidden">{a}</div>
 
       {/* Gutter */}
       <div
@@ -89,7 +89,7 @@ export function ResizableSplit({
       />
 
       {/* Pane B */}
-      <div className="min-w-0 min-h-0 overflow-auto">{b}</div>
+      <div className="min-w-0 min-h-0 overflow-hidden">{b}</div>
     </div>
   )
 }

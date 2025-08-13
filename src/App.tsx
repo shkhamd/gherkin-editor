@@ -24,7 +24,7 @@ export default function App() {
               </section>
             }
             b={
-              <section className="rounded-2xl bg-white shadow-sm border p-3 h-full overflow-auto min-w-0 min-h-0">
+              <section className="rounded-2xl bg-white shadow-sm border p-3 h-full flex flex-col min-w-0 min-h-0">
                 <h2 className="text-lg font-semibold mb-2">Preview</h2>
                 <PreviewPane />
               </section>
@@ -42,7 +42,7 @@ export default function App() {
               </section>
             }
             b={
-              <section className="rounded-2xl bg-white shadow-sm border p-3 h-full overflow-auto min-w-0 min-h-0">
+              <section className="rounded-2xl bg-white shadow-sm border p-3 h-full flex flex-col min-w-0 min-h-0">
                 <h2 className="text-lg font-semibold mb-2">Preview</h2>
                 <PreviewPane />
               </section>
