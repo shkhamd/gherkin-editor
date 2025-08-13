@@ -1,7 +1,5 @@
 node_modules/
 dist/
-tests/
-gherkin-editor-*.zip
 *.log
 plan.md 
 spec.md
