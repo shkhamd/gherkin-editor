@@ -1,5 +1,4 @@
 node_modules/
 dist/
+tests/
 *.log
-PLAN.md 
-SPEC.md
